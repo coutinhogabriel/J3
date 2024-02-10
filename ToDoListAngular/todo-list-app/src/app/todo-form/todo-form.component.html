@@ -1,0 +1,6 @@
+<!-- todo-form.component.html -->
+<form (submit)="submitTodo()">
+  <label for="newTodo">Nova Tarefa:</label>
+  <input type="text" id="newTodo" [(ngModel)]="newTodo" required>
+  <button type="submit">Adicionar</button>
+</form>

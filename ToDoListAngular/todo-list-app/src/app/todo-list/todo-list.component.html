@@ -1,0 +1,14 @@
+<!-- todo-list.component.html -->
+<div *ngIf="todos.length === 0; else todoList">
+    <p>Seja bem-vindo! Comece adicionando algumas tarefas.</p>
+  </div>
+  
+  <ng-template #todoList>
+    <ul>
+      <li *ngFor="let todo of todos; let i = index">
+        {{ todo }}
+        <button (click)="deleteTodo(i)">Remover</button>
+      </li>
+    </ul>
+  </ng-template>
+  

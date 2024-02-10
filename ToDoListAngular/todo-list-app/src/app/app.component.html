@@ -1,0 +1,6 @@
+<!-- app.component.html -->
+<div>
+  <app-todo-form (addTodo)="addTodoFromForm($event)"></app-todo-form>
+  <app-todo-list [todos]="todos" (deleteTodo)="deleteTodo"></app-todo-list>
+
+</div>
